@@ -23,7 +23,3 @@ class MyDataset(Dataset):
         image=keep_image_size_open(image_path)
         return transform(image),transform(segment_image)
 
-if __name__ == '__main__':
-    data=MyDataset('D:\pythonSpace\data\VOC\VOCdevkit\VOC2007')
-    print(data[0][0].shape)
-    print(data[0][1].shape)
